@@ -1,9 +1,10 @@
 import React from 'react'
+import './megaMenu.css'
 
 const MegaMenu = () => {
   return (
-    <div>
-      MegaMenu
+    <div className='megamenu__section'>
+      
     </div>
   )
 }
