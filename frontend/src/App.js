@@ -1,28 +1,15 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import NavBar from './pages/layout/NavBar';
-import FooterBar from './pages/layout/FooterBar';
-import { AuthProvider } from './common/context';
-
-import Home from './pages/user/HomePage';
-import Aboutus from './pages/user/Aboutus';
-import Gallery from './pages/user/Gallery';
-import ContactUs from './pages/user/ContactUs';
-
-
+import {Routes, Route } from 'react-router-dom';
+import {Home , Services , AboutUnion,Events} from './pages'
 
 function App() {
   return (
-    <AuthProvider>
-      <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/aboutUnion' element={<AboutUnion/>}/>
+        <Route path='/events' element={<Events />} />
+
       </Routes>
-      <FooterBar />
-      </AuthProvider>
   );
 }
 
