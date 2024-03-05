@@ -1,0 +1,13 @@
+.dropdown_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f8fafc;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.label-text{
+    color: #020617;
+}

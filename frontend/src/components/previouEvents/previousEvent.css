@@ -1,0 +1,45 @@
+.previousEvent__container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 450px;
+
+}
+
+.col_01{
+    width: 40%;
+
+}
+
+.col_02{
+    width: 35%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    
+   
+}
+
+.col_03{
+    width: 25%;
+    background-color: rgb(187, 126, 14);
+}
+
+.image_02{
+    border-radius: 15px;
+    
+}
+
+.row_01{
+    height: 220px;
+    background-color: rgb(202, 101, 70);
+    border-radius: 15px;
+    margin-bottom: 12px;
+    
+}
+
+.row_02{
+    background-color: aqua;
+    height: 220px;
+    /* margin-top: 10px; */
+    border-radius: 15px;
+}

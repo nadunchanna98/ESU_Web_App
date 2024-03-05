@@ -1,6 +1,21 @@
-.megamenu__section{
-    height: 4rem;
-    padding-top: 0.5rem;
-    background-color:var(--color-blue-950);
-    
+.megamenu__mainContainer{
+    background-color: var(--color-blue-900);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
 }
+
+
+.mega__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
+}
+
+
+
+
+

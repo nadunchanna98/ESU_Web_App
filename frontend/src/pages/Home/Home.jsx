@@ -1,16 +1,25 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import MegaMenu from '../../components/megaMenu/MegaMenu'
+import Megamenu from '../../components/megaMenu/Megamenu';
+import Herosetion from '../../components/heroSection/Herosetion';
+import PreviousEvent from '../../components/previouEvents/PreviousEvent';
+
+
 
 const Home = () => {
   return (
     <>
     <div>
-      <Navbar/>
+    <Navbar/>
     </div>
+
     <div>
-      <MegaMenu/>
+    <Megamenu/>
     </div>
+ 
+       <Herosetion/>
+       <PreviousEvent/>
+
     </>
   )
 }

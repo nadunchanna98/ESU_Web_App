@@ -10,20 +10,28 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+
   :root{
 
     --color-bg : #fafaf9;
     --color-blue-950 : #020617;
+    --color-blue-900 : #111827;
 
 
     --container-width-lg:80%;
     --container-width-md:90%;
   }
 
-  .container{
+  .main__container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .custom__container{
     width : var(--container-width-lg);
     max-width:1280px;
     margin-inline: auto;
+
   }
 
 .lato-regular {

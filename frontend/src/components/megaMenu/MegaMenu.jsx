@@ -1,16 +1,25 @@
 import React from 'react'
+import { megaMenuData } from '../../constants/megaMenuData';
+import MenuItem from './menuItem/MenuItem';
 import './megaMenu.css'
-import { Container } from 'react-bootstrap'
 
-const MegaMenu = () => {
+
+const Megamenu = () => {
   return (
-    <div className='megamenu__section'>
-      <Container>
-        
-      </Container>
-      
+    <div className='megamenu__mainContainer'>
+    <div className=' custom__container nav__container'>
+
+     <nav >
+       <ul className='mega__menu'>
+       {megaMenuData.map(({label , children} , index) => (
+         <MenuItem key={index}  label = {label}  children = {children} />
+       ))}
+       </ul>
+     </nav>
+   
     </div>
+ </div>
   )
 }
 
-export default MegaMenu
+export default Megamenu

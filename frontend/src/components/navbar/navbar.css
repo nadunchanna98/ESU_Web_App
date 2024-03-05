@@ -1,6 +1,7 @@
 .nav__section{
     height: 4rem;
-    padding-top: 0.5rem;
+    padding-top : 0.5rem ;
+    align-items: center;
     
 }
 
@@ -15,25 +16,28 @@
     flex-direction: row;
     align-items: center;
     
+    
 }
 
 .logoText{
     color:#000000 ;
     margin-left: 12px;
     line-height: 1.4rem;
+    font-size: 16px;
     margin-top: -5px;
+    
 }
 
 .image{
     width: 50px;
     height: 50px;
-    margin-top: -1px;
+    /* margin-top: -4px ; */
 }
 
 .nav__menu{
     display: flex;
     align-items: center;
-    margin-top: -5px;
+    margin-top: -5px ;
     gap: 40px;
 }
 
@@ -41,7 +45,8 @@
 
 .nav__link{
     font-size: 16px;
-    color: black;
+    color: black ;
+    text-decoration: none;
 }
 
 #mobile{
@@ -49,11 +54,13 @@
 }
 
 
+
+
 @media screen and (max-width:768px) {
     .image{
         width: 45px;
         height: 45px;
-        margin-top: 3px;
+        /* margin-top: 3px; */
     }
 
     .logoText{
@@ -66,6 +73,7 @@
 
     #mobile{
         display: block;
+        z-index: 10;
     }
 
     .mobile__menu{
@@ -77,18 +85,19 @@
         text-align:start;
         padding: 2rem;
         position: absolute;
-        top: 50px;
+        top: 50px ;
         right: 0;
-        margin-top: 1rem;
+        margin-top: 1rem ;
         min-height: 210px;
         background-color: var(--color-blue-950);
         color: aliceblue;
         border-radius: 10px;
+        z-index: 10;
     }
 
     .nav__link{
         font-size: 22px;
-        color: #ffffff;
+        color: #ffffff ;
     }
     
 }
