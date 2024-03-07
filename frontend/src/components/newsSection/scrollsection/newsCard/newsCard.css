@@ -1,0 +1,24 @@
+.newsCard__MainContainer{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap:wrap ; */
+    gap: 15px;
+    max-width: 500px;
+    
+}
+
+.newsCard__ImageContainer{
+    width: 90px;
+    height: 70px;
+    background-color: aliceblue;
+}
+
+.newsCard__TextContainer{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+

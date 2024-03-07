@@ -1,0 +1,14 @@
+.ScrollSection__mainContainer{
+    height: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll; 
+}
+
+/* @media screen and(max-width : 768px) {
+    .ScrollSection__mainContainer{
+        margin-top: 40px;
+    }
+} */

@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/Navbar'
 import Megamenu from '../../components/megaMenu/Megamenu';
 import Herosetion from '../../components/heroSection/Herosetion';
 import PreviousEvent from '../../components/previouEvents/PreviousEvent';
+import NewsSection from '../../components/newsSection/NewsSection';
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
     </div>
  
        <Herosetion/>
+       <NewsSection/>
        <PreviousEvent/>
 
     </>
