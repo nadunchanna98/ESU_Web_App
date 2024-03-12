@@ -1,0 +1,47 @@
+.event-card {
+    display: flex;
+    flex-direction: column;
+    border:  solid #f3f1f1;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    height: 350px;
+    width: 50%;
+
+  }
+  
+  .event-card-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: fill; 
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .event-card-content {
+    padding: 10px;
+  }
+  
+  .event-card-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+  }
+  
+  .event-card-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: black ;
+    font-family: 'Lato'!important;
+
+  }
+  .event-card-container {
+    display: flex; /* Make the container a flexbox for horizontal arrangement */
+    justify-content: space-evenly; /* Distribute cards evenly with spacing */
+  }
+  
+  .event-card {
+    flex-basis: 20%; /* Adjust card width as needed (e.g., 30% for three cards) */
+    margin-bottom: 10; /* Remove bottom margin to prevent unwanted spacing */
+ 
+  }
+  

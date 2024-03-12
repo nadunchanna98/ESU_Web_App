@@ -1,17 +1,65 @@
 .accordion {
-  /* Center the accordion on the page */
   margin: auto;
-  width: 50%;
+  width: 85%;
+}
+
+.accordion-item {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-header {
-  /* Position the down arrow near the title */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e0e0e0;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #555;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .accordion-body {
-  /* Add some margin to move the accordion menu down the page */
-  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding: 15px 20px;
+  display: none;
+  line-height: 1.6;
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+}
+
+/* Hover effect for accordion body */
+.accordion-item:hover .accordion-body {
+  background-color: #f9f9f9;
 }

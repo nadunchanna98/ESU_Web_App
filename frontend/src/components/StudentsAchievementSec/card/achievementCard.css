@@ -1,0 +1,85 @@
+
+.achievement-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.col {
+  flex-basis: 30%; /* Adjust as needed for the spacing between cards */
+}
+
+.card {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  height: 100px; /* Adjust as needed for the card height */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.hix {
+  font-size: medium;
+  margin-bottom: 5px;
+}
+
+.parag1 {
+  text-align: left;
+  font-size: small;
+  color: #555;
+}
+.par{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #7a6a96;
+  border-radius: 50%;
+  align-self: self-start;
+  
+  border-radius: 50%;
+  margin: 1.8em 0em -2.4em 1em;
+ 
+  
+
+}
+
+.topic {
+  font-size: 1.2em;
+  margin: 0 0 0.5em 2.2em; /* Adjust margin to position the topic */
+  align-self: center; /* Align topic vertically in the center */
+  color: #000000;
+  font-family: 'Lato';
+}
+
+
+.paragraph {
+  margin: 0 0 1em 2.2em;
+  align-self: center;
+  font-family: 'Lato';
+}

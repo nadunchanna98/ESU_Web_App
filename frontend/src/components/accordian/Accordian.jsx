@@ -1,66 +1,69 @@
-// import Accordion from 'react-bootstrap/Accordion';
-// import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import './Accordian.css';
+import React, { useState, useEffect } from "react";
+import './Accordian.css';
+import UpcomingEventCard from '../upcommingEvents/upcommingEventCard/UpcomingEventCard.jsx';
 
-// function BasicExample() {
-//   return (
-//     <Accordion defaultActiveKey="0" className='accordian'>
-//       <Accordion.Item eventKey="0">
-//         <Accordion.Header className='accordian-header'>Inter University Events</Accordion.Header>
-//         <Accordion.Body className='accordian-body'>
-//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-//           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-//           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-//           aliquip ex ea commodo consequat. Duis aute irure dolor in
-//           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-//           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-//           culpa qui officia deserunt mollit anim id est laborum.
-//         </Accordion.Body>
-//       </Accordion.Item>
+function BasicExample() {
+  const [activeIndex, setActiveIndex] = useState(0); // Set initial state to 0 for Inter University Events
 
-//       <Accordion.Item eventKey="1" className='accordian'>
-//         <Accordion.Header className='accordian-header'>Inter Faculty Events</Accordion.Header>
-//         <Accordion.Body className='accordian-body'>
-//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-//           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-//           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-//           aliquip ex ea commodo consequat. Duis aute irure dolor in
-//           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-//           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-//           culpa qui officia deserunt mollit anim id est laborum.
-//         </Accordion.Body>
-//       </Accordion.Item>
+  const handleClick = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
-//       <Accordion.Item eventKey="2" className='accordian'>
-//         <Accordion.Header className='accordian-header'>Relgious Events</Accordion.Header>
-//         <Accordion.Body className='accordian-body'>
-//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-//           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-//           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-//           aliquip ex ea commodo consequat. Duis aute irure dolor in
-//           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-//           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-//           culpa qui officia deserunt mollit anim id est laborum.
-//         </Accordion.Body>
-//       </Accordion.Item>
+  useEffect(() => {
+    setActiveIndex(0); // Set activeIndex to 0 when component mounts (initial state)
+  }, []); // Empty dependency array ensures this effect runs only once when component mounts
 
-//             <Accordion.Item eventKey="3" className='accordian'>
-//         <Accordion.Header className='accordian-header'>Premises Events</Accordion.Header>
-//         <Accordion.Body className='accordian-body'>
-//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-//           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-//           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-//           aliquip ex ea commodo consequat. Duis aute irure dolor in
-//           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-//           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-//           culpa qui officia deserunt mollit anim id est laborum.
-//         </Accordion.Body>
-//       </Accordion.Item>
+  return (
+    <div className="accordion">
+      <div className={`accordion-item ${activeIndex === 0 ? 'active' : ''}`}>
+        <div className="accordion-header" onClick={() => handleClick(0)}>
+          Inter University Events
+          <div className={`arrow ${activeIndex === 0 ? 'rotate' : ''}`}></div>
+        </div>
+        <div className="accordion-body">
+          <div className="image-card">
+              <UpcomingEventCard/>
+          </div>
+        </div>
+      </div>
 
+      <div className={`accordion-item ${activeIndex === 1 ? 'active' : ''}`}>
+        <div className="accordion-header" onClick={() => handleClick(1)}>
+          Inter Faculty Events
+          <div className={`arrow ${activeIndex === 1 ? 'rotate' : ''}`}></div>
+        </div>
+        <div className="accordion-body">
+          <div className="image-card">
+              <UpcomingEventCard/>
+          </div>
+        </div>
+      </div>
 
-//     </Accordion>
-//   );
-// }
+      <div className={`accordion-item ${activeIndex === 2 ? 'active' : ''}`}>
+        <div className="accordion-header" onClick={() => handleClick(2)}>
+          Religious Events
+          <div className={`arrow ${activeIndex === 2 ? 'rotate' : ''}`}></div>
+        </div>
+        <div className="accordion-body">
+          <div className="image-card">
+              <UpcomingEventCard/>
+          </div>
+        </div>
+      </div>
 
-// export default BasicExample;
+      <div className={`accordion-item ${activeIndex === 3 ? 'active' : ''}`}>
+        <div className="accordion-header" onClick={() => handleClick(3)}>
+          Premises Events
+          <div className={`arrow ${activeIndex === 3 ? 'rotate' : ''}`}></div>
+        </div>
+        <div className="accordion-body">
+          <div className="image-card">
+              <UpcomingEventCard/>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default BasicExample;
