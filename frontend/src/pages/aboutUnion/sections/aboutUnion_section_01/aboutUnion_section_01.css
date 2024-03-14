@@ -1,0 +1,42 @@
+.abtUni__section-01_heading{
+    margin-top: 30px;
+}
+
+.abtUni__section-01__mainContainer{
+    height:70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+   
+}
+
+.abtUni__section-01__mainContainer-image{
+    background-image: url('../../../../images/aboutUni.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 70vh;
+    width: 35%;
+    
+}
+
+.abtUni__section-01__mainContainer-text{
+    width: 55%;
+}
+
+@media screen and (max-width:768px) {
+    .abtUni__section-01__mainContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abtUni__section-01__mainContainer-image{
+        
+        width: 100%;
+    }
+
+    .abtUni__section-01__mainContainer-text{
+        width: 100%;
+    }
+}

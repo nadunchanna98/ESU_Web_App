@@ -15,7 +15,10 @@ const PreviousEvent = () => {
         <div className='col_01'>
 
           <div className='row_01'>
-            <BackgroundImage src={event_03} className='image_03'></BackgroundImage>   
+            <BackgroundImage src={event_03} className='image_03'>
+              
+              
+              </BackgroundImage>   
           </div>
 
           <div className='row_02'>

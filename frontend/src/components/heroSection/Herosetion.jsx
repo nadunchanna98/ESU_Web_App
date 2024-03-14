@@ -6,9 +6,7 @@ import './herosection.css'
 const Herosetion = () => {
   return (
     <div className='hero__container'>
-      <BackgroundImage src={heroImage}>
-
-      </BackgroundImage>
+      
       
       
       

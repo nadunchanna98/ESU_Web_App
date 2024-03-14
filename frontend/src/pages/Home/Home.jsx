@@ -4,24 +4,19 @@ import Megamenu from '../../components/megaMenu/Megamenu';
 import Herosetion from '../../components/heroSection/Herosetion';
 import PreviousEvent from '../../components/previouEvents/PreviousEvent';
 import NewsSection from '../../components/newsSection/NewsSection';
+import Footer from '../../components/footer/Footer';
 
 
 
 const Home = () => {
   return (
     <>
-    <div>
-    <Navbar/>
-    </div>
-
-    <div>
-    <Megamenu/>
-    </div>
- 
+       <Navbar/>
+       <Megamenu/>
        <Herosetion/>
        <NewsSection/>
        <PreviousEvent/>
-
+       <Footer/>
     </>
   )
 }

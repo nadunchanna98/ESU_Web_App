@@ -5,6 +5,7 @@
     gap: 10px;
     height: 500px;
     margin-top: 50px;
+    overflow-x: hidden;
 }
 
 .col_01{
@@ -71,8 +72,15 @@
 }
 
 @media screen and (max-width: 600px){
+
+    .previousEvent__container{
+        margin-top: 20px;
+    }
+
+
     .previouEvent_main__container{
        height: 450px;
+     
     }
 
     .col_03{
