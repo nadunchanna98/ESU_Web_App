@@ -1,6 +1,5 @@
 import React from 'react'
 import './aboutUnion_section_01.css'
-import abtUni from '../../../../images/aboutUni.webp'
 
 const AboutUnion_section_01 = () => {
   return (

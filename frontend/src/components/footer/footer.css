@@ -74,7 +74,26 @@ iframe{
 .footer_bottom{
     background-color: var(--color-blue-900);
     height: 50px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .footer__main-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-container_01
+    .footer-container_02
+    .footer-container_03
+    .footer-container_04{
+        width: 100%;
+    }
+
+    
+    
+
+
 }

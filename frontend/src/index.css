@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+  
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
@@ -17,8 +18,14 @@
     --color-blue-950 : #020617;
     --color-blue-900 : #111827;
 
+    /* border colors */
+    --border-grey-500: rgba(100, 116, 139, 0.5);
+
+
     --container-width-lg:90%;
     --container-width-md:90%;
+
+    
   }
 
   .main__container{
@@ -38,10 +45,18 @@
   font-weight: 400;
   font-style: normal;
   line-height: 1.4em;
+  font-size: 16px;
 }
 
 .lato-bold {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+@media screen and (max-width :768px) {
+  .lato-regular{
+    font-size: 14px;
+  }
+  
 }

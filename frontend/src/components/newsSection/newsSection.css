@@ -1,8 +1,12 @@
 .news__container{
     height: 60vh;
-   
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+.news__container-heading{
+    margin-bottom: 20px;
+
 }
 
 
@@ -21,7 +25,7 @@
     }
 
     .news__container{
-        height: 100vh;
+        height: auto;
     }
     
 }

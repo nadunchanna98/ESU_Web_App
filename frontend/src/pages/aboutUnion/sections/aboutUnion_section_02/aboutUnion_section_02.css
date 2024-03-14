@@ -3,4 +3,45 @@
     height: 70vh;
     margin-top: 40px;
     padding-top: 30px;
+    
+}
+
+.abtUni__section_02-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.abtUni__section_02-heading{
+    color: aliceblue;
+}
+
+.abtUni__section_02-textcontainer{
+    width: 50%;
+    color: aliceblue;
+    
+}
+
+.abtUni__section_02-imagecontainer{
+    width: 35%;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width : 768px) {
+
+    .abtUni__section_02-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .abtUni__section_02-textcontainer{
+        width: 100%;
+    }
+
+    .abtUni__section_02-imagecontainer{
+        width: 100%;
+    }
+    
 }

@@ -11,12 +11,19 @@ import event_06 from '../../images/event_06.webp'
 const PreviousEvent = () => {
   return (
     <div className='main__container previouEvent_main__container'>
+
+      <div className='custom__container previouEvent-heading'>
+        <h3 className='lato-bold '>Previos Events</h3>
+      </div>
+
       <div className='custom__container previousEvent__container'>
         <div className='col_01'>
 
           <div className='row_01'>
             <BackgroundImage src={event_03} className='image_03'>
-              
+             <div>
+              <h5>ffxfxzfxgzfx</h5>
+             </div>
               
               </BackgroundImage>   
           </div>
