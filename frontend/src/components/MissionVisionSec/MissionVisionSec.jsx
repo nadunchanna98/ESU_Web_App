@@ -19,6 +19,7 @@ const MissionVisionSec = () => {
         <p className='p1'>Quisque hendrerit nunc non mi lacinia tempus. Integer condimentum, enim id aliquet lacinia, libero purus dictum odio, a posuere leo sem a nibh.</p>
       </div>
     </div>
+    
    </div>
   );
 };

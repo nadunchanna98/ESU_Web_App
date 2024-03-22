@@ -32,7 +32,7 @@ const CustomNavbar = () => {
           <Link to="/" className='nav__link lato-bold'>Home</Link>
           <Link to="/services" className='nav__link lato-bold'>Service</Link>
           <Link to="/aboutUnion" className='nav__link lato-bold'>About Union</Link>
-          <Link to="/contact" className='nav__link lato-bold'>Contact Us</Link>
+          <Link to="/ContactUs" className='nav__link lato-bold'>Contact Us</Link>
         </ul>
 
         <div id='mobile'>

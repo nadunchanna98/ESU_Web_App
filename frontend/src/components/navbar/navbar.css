@@ -60,11 +60,12 @@
     .image{
         width: 45px;
         height: 45px;
-        /* margin-top: 3px; */
+        margin-left: 5%; 
     }
 
     .logoText{
         font-size: 15px;
+
     }
 
     .nav__menu{
